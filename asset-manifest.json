@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/skattplan/static/css/main.6ba2c35d.css",
+    "main.js": "/skattplan/static/js/main.0c0cb634.js",
+    "static/js/453.d855a71b.chunk.js": "/skattplan/static/js/453.d855a71b.chunk.js",
+    "index.html": "/skattplan/index.html",
+    "main.6ba2c35d.css.map": "/skattplan/static/css/main.6ba2c35d.css.map",
+    "main.0c0cb634.js.map": "/skattplan/static/js/main.0c0cb634.js.map",
+    "453.d855a71b.chunk.js.map": "/skattplan/static/js/453.d855a71b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6ba2c35d.css",
+    "static/js/main.0c0cb634.js"
+  ]
+}
