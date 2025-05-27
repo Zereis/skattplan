@@ -1,0 +1,86 @@
+.skatt-container {
+  min-height: 100vh;
+  background: #f7f7fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.skatt-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 32px;
+  max-width: 400px;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.skatt-title {
+  color: #003366;
+  margin-bottom: 8px;
+}
+
+.skatt-desc {
+  color: #555;
+  margin-bottom: 24px;
+}
+
+.skatt-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  margin-bottom: 12px;
+}
+
+.skatt-btn {
+  width: 100%;
+  padding: 10px;
+  background: #003366;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+.skatt-radio {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.skatt-result {
+  background: #f0f4fa;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 8px;
+}
+
+.skatt-footer {
+  color: #888;
+  font-size: 0.9em;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .skatt-card, .skatt-card * {
+    visibility: visible;
+  }
+  .skatt-card {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    background: white;
+    box-shadow: none;
+  }
+  .skatt-footer, .skatt-btn, .skatt-radio {
+    display: none !important;
+  }
+}
