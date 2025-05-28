@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Skattplaneraren
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+En modern webbapplikation för att räkna ut och visualisera svensk skatt per år, månad, vecka och dag – samt visa hur skatten fördelas på olika samhällsområden.
 
-## Available Scripts
+## Funktioner
 
-In the project directory, you can run:
+- Räkna ut kommunal och statlig skatt baserat på årsinkomst och vald kommun
+- Visa skatt per år, månad, vecka och dag
+- Visualisera skattefördelning som lista eller graf
+- Spara de 5 senaste uträkningarna (historik) i webbläsaren
+- Skriv ut eller spara uträkningen som PDF
+- Responsiv och användarvänlig design
 
-### `npm start`
+## Tekniker
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Frontend
+- **React** (med TypeScript)
+- **Recharts** (diagram)
+- **Axios** (HTTP-anrop)
+- **CSS** (egen styling och utskriftsvänliga vyer)
+- **localStorage** (historik)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Backend
+- **Java** & **Spring Boot** (REST-API)
+- **Maven** (byggverktyg)
 
-### `npm test`
+### DevOps & Deployment
+- **Docker** & **Docker Compose** (containerisering)
+- **Railway** (publik backend)
+- **GitHub Pages** (publik frontend)
+- **Git & GitHub** (versionshantering)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Kom igång lokalt
 
-### `npm run build`
+1. **Klona repot**
+   ```sh
+   git clone https://github.com/ditt-användarnamn/skattplan.git
+   cd skattplan
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Starta backend**
+   ```sh
+   cd backend
+   ./mvnw package -DskipTests
+   java -jar target/backend-0.0.1-SNAPSHOT.jar
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Starta frontend**
+   ```sh
+   cd ../frontend
+   npm install
+   npm start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. **Öppna [http://localhost:3000](http://localhost:3000) i webbläsaren**
 
-### `npm run eject`
+## Deployment
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Frontend:** Deployas enkelt till GitHub Pages med `npm run deploy` i frontend-mappen.
+- **Backend:** Deployas till Railway (eller Render/Heroku) – se instruktioner i projektet.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Hur jag tänkte
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Projektet är byggt för att vara pedagogiskt, responsivt och lätt att vidareutveckla. Frontend och backend är separerade för enkelhet vid deployment och testning. All kod är typad och strukturerad för att vara lätt att förstå och underhålla.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Kontakt
 
-## Learn More
+Vid frågor, kontakta gärna mig.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![Description](https://i.imgur.com/LsdeFFR.png)
+![Description](https://i.imgur.com/P5hU7xS.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
